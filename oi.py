@@ -1,8 +1,13 @@
-a = int(input("digite o preco do produto: "))
+def verificar_velocidade(velo):
+    if velo>80:
+        return "multado"
+    else:
+        return "seguro"
 
-if a>100:
-    d = 90/100*a
-    print(d)
+velo = int(input("digite a velocidade: "))
+print(verificar_velocidade(velo))        
 
-else:
-    print("nao a desconto",a)
+
+
+
+
